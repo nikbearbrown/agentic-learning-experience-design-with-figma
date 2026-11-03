@@ -1,0 +1,15 @@
+output/
+*.epub
+*.pdf
+*.docx
+.DS_Store
+node_modules/
+.env
+.env.local
+__pycache__/
+*.pyc
+
+# generated instruction adapters (rebuild from instructions/)
+instructions/.build/
+# Canvas exports are never pushed.
+*.imscc
