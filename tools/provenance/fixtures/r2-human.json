@@ -1,0 +1,102 @@
+{
+  "schema": "alxd-snapshot/0.1",
+  "taken_at": "2026-11-03T15:10:00+00:00",
+  "page": "Practice",
+  "roots": [
+    "1:1"
+  ],
+  "nodes": {
+    "1:1": {
+      "id": "1:1",
+      "name": "Practice item 1",
+      "type": "FRAME",
+      "parent": null,
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "visible": true,
+      "text": null,
+      "fills": [],
+      "component": null,
+      "props": null,
+      "layout": "VERTICAL",
+      "annotations": [
+        "Provenance \u00b7 r2 \u00b7 human \u00b7 2026-11-03"
+      ]
+    },
+    "1:2": {
+      "id": "1:2",
+      "name": "Question",
+      "type": "TEXT",
+      "parent": "1:1",
+      "x": 24,
+      "y": 80,
+      "w": 342,
+      "h": 60,
+      "visible": true,
+      "text": "Which kind of cognitive load does a worked example reduce?",
+      "fills": [],
+      "component": null,
+      "props": null,
+      "layout": null,
+      "annotations": []
+    },
+    "1:3": {
+      "id": "1:3",
+      "name": "Answer",
+      "type": "TEXT",
+      "parent": "1:1",
+      "x": 24,
+      "y": 160,
+      "w": 342,
+      "h": 40,
+      "visible": false,
+      "text": "Extraneous load",
+      "fills": [],
+      "component": null,
+      "props": null,
+      "layout": null,
+      "annotations": []
+    },
+    "1:4": {
+      "id": "1:4",
+      "name": "Hint button",
+      "type": "FRAME",
+      "parent": "1:1",
+      "x": 24,
+      "y": 600,
+      "w": 342,
+      "h": 48,
+      "visible": true,
+      "text": null,
+      "fills": [
+        {
+          "color": "#2F6B4F",
+          "var": "color/accent"
+        }
+      ],
+      "component": null,
+      "props": null,
+      "layout": "VERTICAL",
+      "annotations": []
+    },
+    "1:5": {
+      "id": "1:5",
+      "name": "Feedback",
+      "type": "TEXT",
+      "parent": "1:1",
+      "x": 24,
+      "y": 220,
+      "w": 342,
+      "h": 40,
+      "visible": true,
+      "text": "Not quite. A worked example removes the search for a method, so which load drops?",
+      "fills": [],
+      "component": null,
+      "props": null,
+      "layout": null,
+      "annotations": []
+    }
+  }
+}

@@ -1,8 +1,33 @@
 # STATUS.md — Build State & Gate Sign-offs
 
 **Book:** Agentic Learning Experience Design with Figma
-**Current phase:** 0 — BLUEPRINT
-**Last updated:** (set on each change)
+**Current phase:** 0 — BLUEPRINT (GATE 0 unsigned). Chapters rough-drafted early; see the note below.
+**Last updated:** 2026-11-03
+
+> **Note, 2026-11-03.**
+> - The author approved the 15-chapter outline in chat and asked for a hands-on rough draft of every chapter. Drafting ran **ahead of GATE 0 and GATE 1** at the author's direction.
+> - Every chapter carries a "Rough draft — pre-research" banner. Figma facts come from `../figma-for-educational-ai` and are tagged `[VERIFY]`. Every agent output and learner result is a RUN slot, because nothing has been run against Figma yet.
+> - No gate below has been signed. Only the author signs gates.
+
+## Whole-Book Rough-Draft Pass, 2026-11-03
+
+The author explicitly authorized: "write every chapter" and "You don't need my
+approval for a rough draft," reserving editorial feedback until after reading.
+This authorization applies to rough-manuscript drafting only, not research
+verification, human rewrite, learner participation, publication, or gate signatures.
+
+- All 15 numbered chapter files now exist, plus front matter and Appendices A-E.
+- Chapters 1 and 12 were preserved without text changes. The other 13 numbered
+  chapters and the front/back matter were added in this pass.
+- Every chapter has an unsigned `rough_draft` verification sidecar. No sign-off
+  was invented and no `verified: true` field was set.
+- Reading copies: `output/rough-draft.html`, `output/rough-draft.epub`, and
+  `output/rough-draft.md`. Editable sources remain in `chapters/`.
+- `DRAFT-REVIEW.md` separates editorial decisions from research/live-run work.
+- No live Figma session, learner study, measured tool budget, generated figure,
+  or production integration was performed as part of writing this manuscript.
+
+The formal current phase remains Blueprint, with all existing gates unsigned.
 
 The agent reads this file before every phase. A phase may begin only when the
 **previous** phase's gate below is checked **and** initialed by a human (or, for

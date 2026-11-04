@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "alxd-provenance/0.1",
+  "title": "provenance.json: every round of agent draws, human corrects, agent redraws",
+  "description": "The record Figma can't keep. Through MCP an agent can't name versions or comment, use_figma forbids setPluginData, and version history credits agent edits to the signed-in human. A human round must carry the human's own 'why' (prov.py enforces this). File keys never appear here; file_ref is a local name.",
+  "type": "object",
+  "required": ["schema", "project", "lesson", "file_ref", "created_at", "rounds", "constraints"],
+  "properties": {
+    "schema": {"type": "string", "enum": ["alxd-provenance/0.1"]},
+    "project": {"type": "string"},
+    "lesson": {"type": "string", "description": "the lesson the screens serve, e.g. 'LXD Ch 3: The Cognitive Machinery, practice unit'"},
+    "file_ref": {"type": "string", "description": "a local name mapped to the Figma file key outside the repo"},
+    "created_at": {"type": "string"},
+    "rounds": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "actor", "at", "intent", "snapshot", "diff", "why", "constraints_added", "constraints_released", "checks"],
+        "properties": {
+          "id": {"type": "string", "description": "r1, r2, ..."},
+          "actor": {"type": "string", "enum": ["agent", "human"]},
+          "at": {"type": "string"},
+          "chapter": {"type": ["integer", "null"]},
+          "intent": {"type": "string", "description": "what this round set out to do, one line"},
+          "prompt": {"type": ["string", "null"], "description": "agent rounds: the instruction the human gave"},
+          "script": {"type": ["string", "null"], "description": "agent rounds: path to the use_figma script that ran"},
+          "snapshot": {"type": "string", "description": "path to the snapshot.js output taken at the end of the round"},
+          "screenshot": {"type": ["string", "null"]},
+          "diff": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["node", "change"],
+              "properties": {
+                "node": {"type": "string"},
+                "name": {"type": ["string", "null"]},
+                "change": {"type": "string", "enum": ["added", "removed", "renamed", "reparented", "moved", "resized", "text", "fills", "visible", "props", "component", "layout", "annotations"]}
+              }
+            }
+          },
+          "why": {"type": ["string", "null"], "description": "human rounds: the human's reason, in their words"},
+          "constraints_added": {"type": "array", "items": {"type": "string"}},
+          "constraints_released": {"type": "array", "items": {"type": "string"}},
+          "violations_overridden": {"type": "array"},
+          "override_why": {"type": ["string", "null"]},
+          "checks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name", "result"],
+              "properties": {
+                "name": {"type": "string"},
+                "result": {"type": "string", "enum": ["pass", "fail", "not-run"]}
+              }
+            }
+          },
+          "calls_used": {"type": ["integer", "null"], "description": "MCP calls this round used, as counted"}
+        }
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "node", "property", "value", "from_round", "why", "released_in"],
+        "properties": {
+          "id": {"type": "string"},
+          "node": {"type": "string"},
+          "name": {"type": ["string", "null"]},
+          "property": {"type": "string", "enum": ["exists", "name", "parent", "position", "size", "text", "fills", "visible", "props", "component", "layout"]},
+          "from_round": {"type": "string"},
+          "why": {"type": "string"},
+          "released_in": {"type": ["string", "null"]},
+          "release_why": {"type": ["string", "null"]}
+        }
+      }
+    }
+  }
+}

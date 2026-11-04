@@ -1,0 +1,145 @@
+{
+  "status": "structural-checks-pass",
+  "draft_date": "2026-11-03",
+  "scope": "coverage, required chapter sections, exercise tiers, JSON examples, code fences, unsigned sidecars, reading-copy generation",
+  "not_performed": [
+    "live Figma runs",
+    "learner testing",
+    "substantive fact checking",
+    "human rewrite/sign-off"
+  ],
+  "source_files": 17,
+  "numbered_chapters": 15,
+  "words": 53116,
+  "json_blocks_checked": 19,
+  "chapters": [
+    {
+      "file": "00-frontmatter.md",
+      "chapter": null,
+      "words": 1562,
+      "sha256": "df34764af0c6e19b127e514c90bbbdbdb0fff0b93709b4b596c7b26f291a1d77"
+    },
+    {
+      "file": "01-the-screen-that-teaches-nothing.md",
+      "chapter": 1,
+      "words": 4013,
+      "sha256": "5586a4a25d41af29da939ab0e5eaa8097b8026b4f9ea2692b83b081781a898c3"
+    },
+    {
+      "file": "02-wiring-the-agent-to-the-canvas.md",
+      "chapter": 2,
+      "words": 3032,
+      "sha256": "5de6f932e60f2b4bf193d37e84dd58756255e9df9bc030d3ed2c33fb57b48d65"
+    },
+    {
+      "file": "03-how-the-agent-sees-a-frame.md",
+      "chapter": 3,
+      "words": 3006,
+      "sha256": "4394ae2e98399983ad084fc207cb1493c439bb9ce2ca683e6442e76005b65592"
+    },
+    {
+      "file": "04-from-learning-objective-to-screen-inventory.md",
+      "chapter": 4,
+      "words": 3007,
+      "sha256": "dce4cb2b7d2c38530fed2a3eba39e63a45a4bfc357f7c85810b069d3c9e0ec93"
+    },
+    {
+      "file": "05-variables-as-pedagogy-support-levels-as-modes.md",
+      "chapter": 5,
+      "words": 2989,
+      "sha256": "e5bf9e229da9197f14308a10c8e9cba42eee61a274dfafe0b6ee0ab7113ee969"
+    },
+    {
+      "file": "06-item-types-the-agent-cant-break.md",
+      "chapter": 6,
+      "words": 3002,
+      "sha256": "b898b2cb39c0980e3dfa7090d5dc9397c7cc68d31ea58973c29bce39001de15d"
+    },
+    {
+      "file": "07-feedback-hints-and-the-answer-you-dont-show.md",
+      "chapter": 7,
+      "words": 2991,
+      "sha256": "2df02d402308803793cd7790415a1045b54fea1f088df8c39d38dcc0747e2fd5"
+    },
+    {
+      "file": "08-retrieval-and-spacing-flows.md",
+      "chapter": 8,
+      "words": 3026,
+      "sha256": "687623831346fb4a3f58dd5010d3d07eeacffcddc1a70e72d7ebc4d08a3d3b8a"
+    },
+    {
+      "file": "09-designing-under-cognitive-load.md",
+      "chapter": 9,
+      "words": 2998,
+      "sha256": "add7bdd920e8304ba6f0ffc0b179c6448a7e94d8e8546919e845122ac638a337"
+    },
+    {
+      "file": "10-accessible-learning-items.md",
+      "chapter": 10,
+      "words": 3020,
+      "sha256": "d15506c0476cec4f6094468d2815674954045f3a3c1f86863b0f139155d69de0"
+    },
+    {
+      "file": "11-progress-mastery-and-the-dashboard-problem.md",
+      "chapter": 11,
+      "words": 3033,
+      "sha256": "bd3eaef93df70455fd862aea4a7c301f2259968de6dfbaa0e3038a33a3e69dec"
+    },
+    {
+      "file": "12-the-rules-file.md",
+      "chapter": 12,
+      "words": 4954,
+      "sha256": "c8eea317a3e9260cbdfb0450120b8fc5f84ff7f3e290755a4dc8414f40e87c91"
+    },
+    {
+      "file": "13-testing-with-learners-not-pixels.md",
+      "chapter": 13,
+      "words": 2992,
+      "sha256": "258ecc56e4988421ced5d9271963b6de7127c37743f838e917e7b3090e4cfafe"
+    },
+    {
+      "file": "14-handoff-code-make-and-the-lms.md",
+      "chapter": 14,
+      "words": 2983,
+      "sha256": "00471f13a6a488b70647d0edb75c7722a1b865e42b86f1d29709383e744687f7"
+    },
+    {
+      "file": "15-capstone-one-lesson-agent-built-learner-tested.md",
+      "chapter": 15,
+      "words": 2992,
+      "sha256": "21ac949291d17eca42b8e7b81ba47d49ea8d63ab8e6b74d7347e88d3a052bef0"
+    },
+    {
+      "file": "99-back-matter.md",
+      "chapter": null,
+      "words": 3516,
+      "sha256": "afe257d85d077fc992eeb9b2a350c02a7476dbdf306c5f04e5afeafb61173772"
+    }
+  ],
+  "renderer_warnings": [],
+  "errors": [],
+  "reading_copy_checks": {
+    "html_chapters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "duplicate_ids": [],
+    "missing_internal_anchors": [],
+    "epub_source_sections": 17,
+    "epub_xml_documents_parsed": 23,
+    "visual_browser_preview": "not available: local-file navigation blocked"
+  }
+}
